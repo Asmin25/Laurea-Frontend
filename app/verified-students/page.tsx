@@ -282,14 +282,7 @@ export default function VerifiedStudentsPage() {
               {students.reduce((sum, s) => sum + s.verify_count, 0)}
             </div>
           </div>
-          <div className="bg-white rounded-xl shadow-lg p-6">
-            <div className="text-sm text-gray-600 mb-1">Avg per Student</div>
-            <div className="text-3xl font-bold text-blue-600">
-              {students.length > 0
-                ? (students.reduce((sum, s) => sum + s.verify_count, 0) / students.length).toFixed(1)
-                : '0'}
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>
