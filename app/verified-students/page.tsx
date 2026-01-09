@@ -271,7 +271,7 @@ export default function VerifiedStudentsPage() {
         </div>
 
         {/* Footer Stats */}
-        <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="bg-white rounded-xl shadow-lg p-6">
             <div className="text-sm text-gray-600 mb-1">Total Students</div>
             <div className="text-3xl font-bold text-indigo-600">{students.length}</div>
@@ -282,7 +282,6 @@ export default function VerifiedStudentsPage() {
               {students.reduce((sum, s) => sum + s.verify_count, 0)}
             </div>
           </div>
-          
         </div>
       </div>
     </div>
